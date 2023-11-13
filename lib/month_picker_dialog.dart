@@ -248,6 +248,10 @@ class _MonthPickerDialogState extends State<_MonthPickerDialog> {
             );
           },
         ),
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(
+          widget.controller.roundedCornersRadius,
+        ))),
       ),
     );
   }
