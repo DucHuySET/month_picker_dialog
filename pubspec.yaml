@@ -1,4 +1,4 @@
-name: month_picker_dialog
+name: month_picker_dialog_easyhrm
 description: Internationalized dialog for picking a single month from an infinite list of years.
 version: 2.2.1
 homepage: https://github.com/hmkrivoj/month_picker_dialog
