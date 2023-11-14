@@ -7,6 +7,7 @@ import '/src/month_picker_widgets/header/header_selected_date.dart';
 class PickerHeader extends StatelessWidget {
   const PickerHeader({
     super.key,
+    this.arrowSize,
     required this.theme,
     required this.localeString,
     required this.isMonthSelector,
@@ -19,6 +20,7 @@ class PickerHeader extends StatelessWidget {
   final bool isMonthSelector, portrait;
   final VoidCallback onSelectYear;
   final MonthpickerController controller;
+  final double? arrowSize;
 
   @override
   Widget build(BuildContext context) {
@@ -63,6 +65,7 @@ class PickerHeader extends StatelessWidget {
                     isMonthSelector: isMonthSelector,
                     onSelectYear: onSelectYear,
                     controller: controller,
+                    arrowSize: arrowSize,
                   ),
                 ],
               ),

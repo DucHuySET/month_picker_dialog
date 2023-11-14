@@ -8,6 +8,7 @@ import '/src/month_picker_widgets/header/header_arrows.dart';
 class HeaderRow extends StatelessWidget {
   const HeaderRow({
     super.key,
+    this.arrowSize,
     required this.theme,
     required this.localeString,
     required this.isMonthSelector,
@@ -19,6 +20,7 @@ class HeaderRow extends StatelessWidget {
   final bool isMonthSelector;
   final VoidCallback onSelectYear;
   final MonthpickerController controller;
+  final double? arrowSize;
 
   @override
   Widget build(BuildContext context) {
@@ -52,6 +54,7 @@ class HeaderRow extends StatelessWidget {
             onDownButtonPressed: controller.onDownButtonPressed,
             downState: monthProvider.enableState.downState,
             upState: monthProvider.enableState.upState,
+            arrowSize: arrowSize,
           ),
         ] else ...<Widget>[
           Row(
@@ -82,6 +85,7 @@ class HeaderRow extends StatelessWidget {
             onDownButtonPressed: controller.onDownButtonPressed,
             downState: yearProvider.enableState.downState,
             upState: yearProvider.enableState.upState,
+            arrowSize: arrowSize,
           ),
         ]
       ],

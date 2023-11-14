@@ -88,6 +88,7 @@ Future<DateTime?> showMonthPicker({
   int animationMilliseconds = 450,
   bool hideHeaderRow = false,
   double? textScaleFactor,
+  double? arrowSize,
 }) async {
   assert(forceSelectedDate == dismissible || !forceSelectedDate,
       'forceSelectedDate can only be used with dismissible = true');
@@ -120,6 +121,7 @@ Future<DateTime?> showMonthPicker({
     theme: theme,
     useMaterial3: theme.useMaterial3,
     textScaleFactor: textScaleFactor,
+    arrowSize: arrowSize,
   );
   final DateTime? dialogDate = await showDialog<DateTime>(
     context: context,
@@ -223,6 +225,7 @@ class _MonthPickerDialogState extends State<_MonthPickerDialog> {
       onSelectYear: _onSelectYear,
       portrait: portrait,
       controller: widget.controller,
+      arrowSize: widget.controller.arrowSize,
     );
 
     return Theme(
