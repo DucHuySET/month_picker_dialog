@@ -19,15 +19,17 @@ class HeaderArrows extends StatelessWidget {
       children: <Widget>[
         IconButton(
           icon: Icon(
-            Icons.keyboard_arrow_up,
+            Icons.keyboard_arrow_up_rounded,
             color: upState ? arrowcolors : arrowcolors!.withOpacity(0.5),
+            size: 30,
           ),
           onPressed: upState ? onUpButtonPressed : null,
         ),
         IconButton(
           icon: Icon(
-            Icons.keyboard_arrow_down,
+            Icons.keyboard_arrow_down_rounded,
             color: downState ? arrowcolors : arrowcolors!.withOpacity(0.5),
+            size: 30,
           ),
           onPressed: downState ? onDownButtonPressed : null,
         ),

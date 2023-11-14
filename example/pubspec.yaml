@@ -15,7 +15,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  month_picker_dialog:
+  month_picker_dialog_easyhrm:
     path: ../
 
 flutter:

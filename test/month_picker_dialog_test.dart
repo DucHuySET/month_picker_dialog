@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:month_picker_dialog/src/helpers/controller.dart';
-import 'package:month_picker_dialog/src/helpers/extensions.dart';
+import 'package:month_picker_dialog_easyhrm/src/helpers/controller.dart';
+import 'package:month_picker_dialog_easyhrm/src/helpers/extensions.dart';
 
 void main() {
   test('default_controller_test', () {
